@@ -5,12 +5,6 @@ PCNN 是脉冲耦合神经网络模型，具有很好的同步脉冲发放特性
 
 > Huang Y, Ma Y, Li S. A New Method For Image Quantization Based On Adaptive Region Related Heterogeneous PCNN. ISNN2015.
 
-## 基本模型
-
-PCNN 可以用下列公式来定量描述
-
-<img src="http://latex.codecogs.com/gif.latex?\frac{\partial J}{\partial \theta_k^{(j)}}=\sum_{i:r(i,j)=1}{\big((\theta^{(j)})^Tx^{(i)}-y^{(i,j)}\big)x_k^{(i)}}+\lambda \theta_k^{(j)}" />
-
 ## 目录结构
 
 ```
@@ -24,6 +18,26 @@ PCNN 可以用下列公式来定量描述
 ├── quantizer.ui #UI界面
 ├── utils.cpp #算法和工具类
 └── utils.h
+```
+
+## 方法
+
+在 utils.cpp 中实现了下列方法，主要是参数计算和格式转换。
+
+```
+    QImage RGBtoGray(QImage image);
+    double** QImagetoArray(QImage image);
+    QImage arraytoQImage(double** array);
+
+    double caculateStd2(double **image);
+    int caculateGraythresh(double** image);
+    dynamicParameter caculatePCNNParameters(double** image);
+    void caculateConv2(double image[][WID], double filter[][3]);
+
+    double** allocateHeap(int rows, int cols);
+    void releaseHeap(double** A, int rows);
+
+    double** PCNNQuantize(double** image);
 ```
 
 ## 界面
