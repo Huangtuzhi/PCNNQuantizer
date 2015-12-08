@@ -1,5 +1,5 @@
 # PCNNQuantizer
-基于 QT 的图形界面，使用 Pulse Coupled Neural Network(PCNN) 对图像进行量化，最后移植到 Mini2440(ARM9) 嵌入式平台上。是本人论文部分内容的 C++ 实现。
+基于 QT 的图形界面，使用 Pulse Coupled Neural Network(PCNN) 对图像进行量化，最后移植到 Mini2440(ARM9) 嵌入式平台。
 
 # 目录结构
 
