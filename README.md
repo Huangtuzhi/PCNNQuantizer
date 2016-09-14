@@ -3,11 +3,6 @@
 
 PCNN 是脉冲耦合神经网络模型，具有很好的同步脉冲发放特性。同时对于图像来说，产生的时间序列脉冲不受图像旋转、放大、缩小影响，这个性质可以用来减少图像处理中的几何变换，也可以用来提取图像特征。从 2-D 图像到 1-D 时间序列脉冲，这实质上就是降维。
 
-具体实现原理参见
-
-> [PCNN 量化算法原理](http://link.springer.com/chapter/10.1007/978-3-319-25393-0_30)
-
-> [HPCNN 在图像处理中的应用](http://electronicimaging.spiedigitallibrary.org/article.aspx?articleid=2543355)
 
 ## 目录结构
 
